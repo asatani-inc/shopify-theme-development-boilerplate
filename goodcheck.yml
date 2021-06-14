@@ -1,0 +1,15 @@
+rules:
+  - id: shopify.credentials-check
+    pattern:
+      - /shppa_\d+/
+    message: |
+      Do not include any shopify passwords
+    justification:
+      - Avoid possible security incidents
+    glob:
+      - src/**/*.{js,liquid}
+    fail:
+      - shppa_00000000000000000000000000000000
+
+exclude:
+  - src/assets/*.min.js

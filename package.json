@@ -1,0 +1,40 @@
+{
+  "name": "shopify-theme-development-boilerplate",
+  "version": "0.0.0",
+  "description": "Boilerplate for Shopify theme development",
+  "scripts": {
+    "config": "shopify-themekit configure",
+    "deploy": "shopify-themekit deploy",
+    "deploy:prd": "shopify-themekit deploy -env=production",
+    "eslint": "node_modules/.bin/eslint --ext .js src/assets/",
+    "eslint:fix": "node_modules/.bin/eslint --ext .js --fix src/assets/",
+    "get": "shopify-themekit get",
+    "goodcheck": "bundle exec goodcheck check || exit 1",
+    "lqlint": "bundle exec theme-check",
+    "lqlint:fix": "bundle exec theme-check -a",
+    "open": "shopify-themekit open",
+    "watch": "shopify-themekit watch",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": [
+      "./bin/prevent-direct-commit.sh",
+      "yarn run goodcheck"
+    ],
+    "*.liquid": [
+      "yarn run lqlint"
+    ],
+    "*.js": [
+      "yarn run eslint"
+    ]
+  },
+  "devDependencies": {
+    "@shopify/themekit": "^1.1.8",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
+  }
+}

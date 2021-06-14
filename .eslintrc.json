@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {},
+  "rules": {
+    "semi": "error",
+    "max-len": ["error", {
+      "code": 140
+    }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-console": ["error", { "allow": ["log", "info", "warn", "error"] }],
+    "quotes": ["error", "single"],
+    "no-dupe-keys": ["error"],
+    "no-empty": ["error"],
+    "no-redeclare": ["error"],
+    "no-undef": ["error"],
+    "no-debugger": ["error"],
+    "prefer-const": ["error"],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "none"
+      }
+    ]
+  }
+}

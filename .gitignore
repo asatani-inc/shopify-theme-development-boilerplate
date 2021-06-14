@@ -1,0 +1,7 @@
+# OS related ignorefiles
+.DS_Store
+
+# Project related ignorefiles
+config.yml
+node_modules/
+vendor/bundle/

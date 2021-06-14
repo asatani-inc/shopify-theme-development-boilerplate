@@ -1,0 +1,32 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    goodcheck (2.7.0)
+      psych (>= 3.1, < 4.0)
+      rainbow (>= 3.0, < 4.0)
+      strong_json (>= 1.1, < 2.2)
+    liquid (5.0.1)
+    nokogiri (1.11.7-x86_64-darwin)
+      racc (~> 1.4)
+    nokogumbo (2.0.5)
+      nokogiri (~> 1.8, >= 1.8.4)
+    psych (3.3.2)
+    racc (1.5.2)
+    rainbow (3.0.0)
+    strong_json (2.1.2)
+    theme-check (0.10.0)
+      liquid (>= 5.0.1)
+      nokogumbo
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  goodcheck
+  theme-check
+
+RUBY VERSION
+   ruby 3.0.1p64
+
+BUNDLED WITH
+   2.2.19

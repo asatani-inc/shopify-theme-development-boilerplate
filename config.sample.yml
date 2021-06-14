@@ -1,0 +1,17 @@
+development:
+  password: shppa_00000000000000000000000000000000
+  theme_id: "000000000000"
+  store: test.myshopify.com
+  directory: src
+
+# staging:
+#   password: shppa_00000000000000000000000000000000
+#   theme_id: "111111111111"
+#   store: test.myshopify.com
+#   directory: src
+
+# production:
+#   password: shppa_00000000000000000000000000000000
+#   theme_id: "222222222222"
+#   store: test.myshopify.com
+#   directory: src
